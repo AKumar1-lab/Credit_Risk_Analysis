@@ -36,34 +36,50 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll evaluate three machine learning models by using resampling to determine which is better at predicting credit risk. First, you’ll use the oversampling **RandomOverSampler** and **SMOTE** algorithms, and then you’ll use the undersampling **ClusterCentroids** algorithm. Using these algorithms, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
-* 1. Clean the data and create a dataframe based on the initial credit data
+##### Clean the data and create a dataframe based on the initial credit data
 
-<img width="735" alt="initial loan_status dataframe" src="https://user-images.githubusercontent.com/85860367/137610393-69cc10f2-2721-4ce7-b839-97713510d179.PNG">
+<img width="715" alt="initial loan_status dataframe" src="https://user-images.githubusercontent.com/85860367/137610393-69cc10f2-2721-4ce7-b839-97713510d179.PNG">
 
-* 2. Create the training and target variables
+##### Create the training and target variables
 
-<img width="715" alt="Create variable and target" src="https://user-images.githubusercontent.com/85860367/137610785-89c50141-d9c7-4389-8796-337263b9436f.PNG">
+<img width="700" alt="Create variable and target" src="https://user-images.githubusercontent.com/85860367/137610785-89c50141-d9c7-4389-8796-337263b9436f.PNG">
 
-* 3. Check the number of targets
+##### Check the number of targets
 
 <img width="344" alt="Number of loan status" src="https://user-images.githubusercontent.com/85860367/137610819-f9811672-a644-4563-b9f9-88958b4f8b7c.PNG">
 
-* 4. RandomOverSampler(oversampling):
+##### 1. RandomOverSampler(oversampling):
 
-![image](https://user-images.githubusercontent.com/85860367/137611164-ca1dd04a-4ebf-4449-9282-58b12590694f.png)
+<img width="420" alt="RandomOverSampling" src="https://user-images.githubusercontent.com/85860367/137611868-7c973355-5aa7-435b-ac94-f225845c7975.PNG">
 
+##### 2. Synthetic Minority Oversampling Technique (SMOTE)(oversampling):
+                                                                                                                                                     
+<img width="420" alt="SMOTEOversampling" src="https://user-images.githubusercontent.com/85860367/137611695-d87e6f1c-8107-4a06-b439-1b39aeba8e58.PNG">
 
-SMOTE:
+##### 3. ClusterCentroids (undersampling): 
 
-ClusterCentroids: 
+<img width="420" alt="ClusterCentroids" src="https://user-images.githubusercontent.com/85860367/137612052-cfc09580-1602-4904-88d6-239f725bd34d.PNG">
+
 
 ### Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
 
 Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’ll use a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms from Deliverable 1. Using the **SMOTEENN** algorithm, you’ll resample the dataset, view the count of the target classes, train a logistic regression classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
 
+##### 4. SMOTEENN Sampling (Combine over- and under-sampling using SMOTE and Edited Nearest Neighbours.)
+
+<img width="420" alt="SMOTEENNSampling" src="https://user-images.githubusercontent.com/85860367/137612073-245b5f79-d16b-4eee-80cb-9b9b39b7eced.PNG">
+
 ### Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 
 Using your knowledge of the imblearn.ensemble library, you’ll train and compare two different ensemble classifiers, **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**, to predict credit risk and evaluate each model. Using both algorithms, you’ll resample the dataset, view the count of the target classes, train the ensemble classifier, calculate the balanced accuracy score, generate a confusion matrix, and generate a classification report.
+
+##### 5. BalancedRandomForestClassifer(A balanced random forest randomly under-samples each boostrap sample to balance it to reduce bias)
+
+<img width="420" alt="Balanced Random Forest Classifer" src="https://user-images.githubusercontent.com/85860367/137612581-d514380f-4f0c-4496-ba64-eb8f44f19443.PNG">
+
+##### 6. EasyEnsembleClassifer(The classifier is an ensemble of AdaBoost learners trained on different balanced boostrap samples. The balancing is achieved by random under-sampling)
+
+<img width="420" alt="EasyEnsemble AdaBoosterClassiferSample" src="https://user-images.githubusercontent.com/85860367/137612589-42b4a2cc-0cab-4c98-9e60-1c6c4900c666.PNG">
 
 ### Deliverable 4: Written Report on the Credit Risk Analysis
 
