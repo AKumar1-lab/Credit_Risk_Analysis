@@ -38,11 +38,11 @@ Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’l
 
 ##### Clean the data and create a dataframe based on the initial credit data
 
-<img width="715" alt="initial loan_status dataframe" src="https://user-images.githubusercontent.com/85860367/137610393-69cc10f2-2721-4ce7-b839-97713510d179.PNG">
+<img width="420" alt="initial loan_status dataframe" src="https://user-images.githubusercontent.com/85860367/137610393-69cc10f2-2721-4ce7-b839-97713510d179.PNG">
 
 ##### Create the training and target variables
 
-<img width="700" alt="Create variable and target" src="https://user-images.githubusercontent.com/85860367/137610785-89c50141-d9c7-4389-8796-337263b9436f.PNG">
+<img width="420" alt="Create variable and target" src="https://user-images.githubusercontent.com/85860367/137610785-89c50141-d9c7-4389-8796-337263b9436f.PNG">
 
 ##### Check the number of targets
 
@@ -87,4 +87,21 @@ For this deliverable, you’ll write a brief summary and analysis of the perform
 
 ### Summary
 
+![image](https://user-images.githubusercontent.com/85860367/137616264-af3eaf4d-ed0f-488d-af76-661cd20d5e13.png)
+
+Accuracy is defined as the percentage of correct predictions (True Positive = True Negative/True Positive+ True Negative+ False Positive + False Negative)
+
+Precision is defined as the perentage of positive predictions that are correct(True Positive/(True Positive + False Positive)).  It is the measure of how reliable the positive classification is.
+
+Sensitivity(Recall) is defined as the percentage of true positive predictions that are correct (True Positive/(True Positive + False Negative)).  It is the measure of the number of observations with a positive classification will be correctly diagnosed.
+
+F1 Score is defined as the harmonic mean that balances the precision and sensitivity F1 = 2(precision * sensitivity)/ (precision + sensitivity)
+
+The analysis show that the precision for the high-risk loans were low for all of the models. The sensitivity(recall) for the high-risk loans was different among all of the models.  In some cases it was either the model was overfitted or underfitted.  
+
+The ClusterCentroid was an example where the high-risk loans underfitted, there is a huge spread in the sensitivity between high and low-risk loans and will have poor results as it does have the correct results or new data cannot be analyed by the model as features are not selected appropriately and only 54% was the balanced accuracy.  
+
+Naive Random OverSampling and SMOTEENN models was an example where the high-risk loans were overfitted, it is a possibility that some results or new data may not be picked up in the model. The machine memorized the algorithms, it appears there were more true negatives in the array, and only 66%, and 64% balanced accuracy, respectively.
+
 ### Recommendation
+Easy Ensemble Ada Boost Classifier model had the best accuracy of 93.17% which means the algorithm was just right as well as the sensitivity between high and low-risk loans.  The spread was minimal, the F1 Score was also the highest.  The bias in this model was also reduced, so all data existing and new was analyzed, which had a better result out outcome.
