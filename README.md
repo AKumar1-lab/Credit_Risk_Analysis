@@ -58,8 +58,7 @@ Using your knowledge of the imbalanced-learn and scikit-learn libraries, you’l
 
 ##### 3. ClusterCentroids (undersampling): 
 
-<img width="420" alt="ClusterCentroids" src="https://user-images.githubusercontent.com/85860367/137612052-cfc09580-1602-4904-88d6-239f725bd34d.PNG">
-
+<img width="420" alt="ClusterCentroids screenshot" src="https://user-images.githubusercontent.com/85860367/137646863-b5623407-57f8-41c7-a2dd-f5c01c51ecbc.PNG">
 
 ### Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk
 
