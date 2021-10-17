@@ -104,4 +104,4 @@ The ClusterCentroid was an example where the high-risk loans underfitted, there 
 Naive Random OverSampling and SMOTEENN models was an example where the high-risk loans were overfitted, it is a possibility that some results or new data may not be picked up in the model. The machine memorized the algorithms, it appears there were more true negatives in the array, and only 66%, and 64% balanced accuracy, respectively.
 
 ### Recommendation
-Easy Ensemble Ada Boost Classifier model had the best accuracy of 93.17% which means the algorithm was just right as well as the sensitivity between high and low-risk loans.  The spread was minimal, the F1 Score was also the highest.  The bias in this model was also reduced, so all data existing and new was analyzed, which had a better result out outcome.
+Easy Ensemble Ada Boost Classifier model had the best accuracy of 93.17% which means the algorithm was just right as well as the sensitivity between high and low-risk loans.  The spread was minimal, the F1 Score was also the highest.  The bias in this model was also reduced, so all data existing and new was analyzed, which had a better result or outcome.
